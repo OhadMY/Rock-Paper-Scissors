@@ -111,9 +111,9 @@ const reset = document.querySelector("#reset");
 const exit = document.querySelector("#exit");
 const changepname = document.querySelector(".changepname");
 
-// // Set context-menu
-// const contextElement = document.createElement("div");
-// contextElement.id = "context-menu";
+// Set dynamic context-menu
+const contextElement = document.createElement("div");
+contextElement.id = "context-menu";
 
 // Set new element
 const rageMenu = document.createElement("div");
