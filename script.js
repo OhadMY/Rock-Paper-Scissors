@@ -127,6 +127,7 @@ rageMenu.innerHTML = `
       </div>
 `;
 
+// Opening context-menu
 mainMenu.addEventListener("contextmenu", function (e) {
   // Disable deafault action
   e.preventDefault();
