@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  color: whitesmoke;
+}
+body {
+  height: 100vh;
+  background-color: rgb(30, 30, 30);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+    Arial, Helvetica, Geneva, sans-serif;
+  display: flex;
+  /* ציר Y */
+  align-items: center;
+  /* ציר X */
+  justify-content: center;
+}
+
+.main input {
+  position: fixed;
+  color: black;
+}
+
+#main {
+  cursor: pointer;
+  display: grid;
+  min-width: 800px;
+  max-width: 1100px;
+  min-height: 600px;
+  max-height: 800px;
+  width: 60%;
+  height: 60%;
+  border-radius: 8px;
+  background-color: rgb(51, 51, 51);
+  box-shadow: 0 0 20px rgb(0, 122, 204, 0.3);
+  grid-template-rows: 10% 90%;
+  grid-template-areas:
+    "top"
+    "mid";
+}
+
+.main {
+  min-width: 800px;
+  max-width: 1100px;
+  min-height: 600px;
+  max-height: 800px;
+  width: 60%;
+  height: 60%;
+  border-radius: 8px;
+  background-color: rgb(51, 51, 51);
+  display: grid;
+  grid-template-rows: 10% 60% 30%;
+  grid-template-areas:
+    "top"
+    "mid"
+    "bot";
+  box-shadow: 0 0 20px rgb(0, 122, 204, 0.3);
+}
+
+#Rock,
+#Paper,
+#Scissors {
+  cursor: pointer;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 122, 204);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.mid {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.score {
+  height: 25%;
+  width: 15%;
+  background-color: rgb(37, 37, 38);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgb(0, 122, 204, 0.5);
+  border-radius: 500px;
+}
+
+#scoretitle {
+  font-size: 20px;
+}
+
+#scoretitle::after {
+  content: "";
+  display: block;
+  height: 1px;
+  margin: 3px auto;
+  background-color: rgb(0, 122, 204, 0.4);
+}
+
+.details {
+  height: 80%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.bot {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(37, 37, 38);
+  height: 150px;
+  width: 150px;
+  border-radius: 15px;
+}
+
+#Rock {
+  background-image: url("rock.png");
+  background-size: contain;
+  box-shadow: 0 0 5px rgb(0, 122, 204, 0.5);
+}
+
+#Paper {
+  background-image: url("paper.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 135px;
+  box-shadow: 0 0 5px rgb(0, 122, 204, 0.5);
+}
+
+#Scissors {
+  background-image: url("scissors.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 135px;
+  box-shadow: 0 0 5px rgb(0, 122, 204, 0.5);
+}
+
+#context-menu {
+  position: absolute;
+  z-index: 999;
+  cursor: pointer;
+  width: 160px;
+  background-color: #1b1a1a;
+  border: 1px inline rgb(85, 85, 85);
+  box-shadow: 3px 3px 3px rgba(40, 40, 40, 0.8);
+  display: none;
+}
+
+#context-menu .item {
+  padding: 8px 10px;
+  font-size: 15px;
+  color: rgb(238, 238, 238);
+}
+
+#context-menu .item:hover {
+  background: rgb(85, 85, 85, 0.7);
+}
+
+#context-menu .item i {
+  /* display: inline-block; */
+  margin-right: 5px;
+}
+
+#context-menu hr {
+  padding: 0px;
+  border-color: rgb(85, 85, 85);
+}

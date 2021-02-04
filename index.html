@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Papper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/79375761b5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Context Menu -->
+    <div id="context-menu">
+      <div class="item" id="edit">
+        <i class="fa fa-paste"></i> Edit Player Name
+      </div>
+      <div class="item" id="shambles">
+        <i class="fa fa-refresh"></i>Shambles
+      </div>
+      <hr />
+      <div class="item" id="reset">
+        <i class="fa fa-trash-o"></i> Reset Score
+      </div>
+      <div class="item" id="exit"><i class="fa fa-times"></i> Exit</div>
+    </div>
+    <!-- Main -->
+    <div class="main">
+      <div class="top">
+        <h1>Rock, Paper, Scissors</h1>
+      </div>
+      <div class="mid">
+        <div class="score" id="player">
+          <div id="scoretitle" class="changepname">Player</div>
+          <div id="pscore">0</div>
+        </div>
+        <div class="details">
+          <div class="topbox">Let the game begin</div>
+          <div class="midbox">First one to get 10 points wins!</div>
+          <div class="botbox">Player choose your move:</div>
+        </div>
+        <div class="score" id="computer">
+          <div id="scoretitle">Computer</div>
+          <div id="cscore">0</div>
+        </div>
+      </div>
+      <div class="bot">
+        <div class="button" id="Rock"></div>
+        <div class="button" id="Paper"></div>
+        <div class="button" id="Scissors"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
